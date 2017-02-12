@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Share</title>
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="share.css">
+</head>
+
+<body>
+        <div class="container">
+            <nav class="navbar navbar-toggleable navbar-light sticky-top">
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" id="tgl">
+                 <span class="navbar-toggler-icon"></span>
+                </button>
+                <a class="navbar-brand" href="#" id="logo">Meme Maker</a>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav navbar-toggler-right">
+                <li class="nav-item active" id="make-nav">
+                    <a class="nav-link" href="#">Make<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item" id="browse-nav">
+                    <a class="nav-link" href="#">Browse</a>
+                </li>
+                <li class="nav-item" id="profile-nav">
+                    <a class="nav-link" href="#">Profile</a>
+                </li>
+                </ul>
+                </div>
+            </nav>
+            <i class="fa fa-pencil fa-3x" aria-hidden="true" id="icon"><span class="header">Make</span></i>
+            <div class="d-flex justify-content-center" id="btn-grp">
+                <div class="p-2"><button type="button" class="btn btn-secondary">1. Choose/upload</button></div>
+                <div class="p-2"><button type="button" class="btn btn-secondary">2. Add text</button></div>
+                <div class="p-2"><button type="button" class="btn btn-outline-secondary">3. Share</button></div>
+            </div>
+                <div class="share-btn">
+                    <div class="d-flex justify-content-center">
+                    <div class="p-2"><button type="button" class="btn btn-secondary">Send</button></div>
+                </div>
+                <div class="d-flex justify-content-center">
+                <div class="p-2"><button type="button" class="btn btn-secondary">Download</button></div>
+                </div>
+                </div>
+            <div class="row align-items-center justify-content-md-center middle">
+            <canvas class="row align-items-center justify-content-md-center middle" id="memecanvas">
+            </canvas>
+            </div>
+            <footer class="fixed-bottom">
+            <div class="row footer">
+                <div class="col d-flex justify-content-start align-items-end ftr">
+                <div id="social-icons">
+                    <a href=''><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                    <a href=''><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                    <a href=''><i class="fa fa-reddit-alien" aria-hidden="true"></i></a>
+                    <a href=''><i class="fa fa-whatsapp" aria-hidden="true"></i></a>
+                </div>
+                </div>
+                <div class="col d-flex justify-content-end align-items-end ftr">
+                <div id="copyright">
+                    <span>Powered by Plamen Todorov</span>
+                </div>
+                </div>
+            </div>
+            </footer>
+        </div>
+    <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="./node_modules/tether/dist/js/tether.min.js"></script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
